@@ -18,24 +18,34 @@
   <table>
   <tr>
       <td class="evenRow">
-        <s:fielderror fieldName = "invoiceBean.subject" />
-        <s:text name="form.subject.message"/>
-        <s:textfield id="subject" name="invoiceBean.subject"/>
+        <s:fielderror fieldName = "invoiceBean.empresa" />
+        <s:text name="form.empresa.message"/>
+        <s:textfield id="empresa" name="invoiceBean.empresa"/>
       </td>
     </tr>
   <tr>
       <td class="evenRow">
-        <s:text name="form.fromDate.message"/>
-        <sx:datetimepicker id="dateFrom" name="invoiceBean.dateFrom"/>
+      <s:fielderror fieldName = "invoiceBean.concepto" />
+        <s:text name="form.concepto.message"/>
+        <s:textfield id="concepto" name="invoiceBean.concepto"/>
       </td>
     </tr>
   <tr>
     <td class="evenRow">
-       <s:text name="form.toDate.message"/>
-       <sx:datetimepicker id="dateTo" name="invoiceBean.dateTo" />
+    <s:fielderror fieldName = "invoiceBean.fechaFactura" />
+       <s:text name="form.fechaFactura.message"/>
+       <sx:datetimepicker id="fechaFactura" name="invoiceBean.fechaFactura" />
     </td>
 
   </tr>
+  <tr>
+      <td class="evenRow">
+      <s:fielderror fieldName = "invoiceBean.importeBruto" />
+         <s:text name="form.importeBruto.message"/>
+         <s:textfield id="importeBruto" name="invoiceBean.importeBruto" />
+      </td>
+
+    </tr>
   <tr>
     <td class="evenRow">
         <s:submit align="left" value="Enviar"/>

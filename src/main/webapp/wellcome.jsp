@@ -4,14 +4,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title><s:text name="hello.message"/></title>
-  <s:head/>
-  <sx:head/>
+
 </head>
 
 <body>
+    <h1>Resumen de factura:</h1>
 
-    <h1>Resumen de factura: </h1>
 
+    <h3><s:text name="form.empresa.message"/> <s:property value="invoiceBean.empresa"/></h3>
+    <h3><s:text name="form.concepto.message"/> <s:property value="invoiceBean.concepto"/></h3>
+    <h3><s:text name="form.fechaFactura.message"/> <s:property value="invoiceBean.fechaFactura"/></h3>
+    <h3><s:text name="form.importeBruto.message"/> <s:property value="invoiceBean.importeBruto"/></h3>
+    <h3><s:text name="form.importeIVA.message"/> <s:property value="invoiceBean.importeBruto * 1.21"/></h3>
 </body>
 </html>

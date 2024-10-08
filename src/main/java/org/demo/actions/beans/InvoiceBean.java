@@ -4,31 +4,41 @@ import java.util.Date;
 
 public class InvoiceBean {
 
-    private String subject;
-    private Date dateFrom;
-    private Date dateTo;
+    private String empresa;
+    private String concepto;
+    private Date fechaFactura;
+    private String importeBruto;
 
-    public Date getDateFrom() {
-        return dateFrom;
+    public String getEmpresa() {
+        return empresa;
     }
 
-    public void setDateFrom(Date dateFrom) {
-        this.dateFrom = dateFrom;
+    public void setEmpresa(String empresa) {
+        this.empresa = empresa;
     }
 
-    public Date getDateTo() {
-        return dateTo;
+    public String getConcepto() {
+        return concepto;
     }
 
-    public void setDateTo(Date dateTo) {
-        this.dateTo = dateTo;
+    public void setConcepto(String concepto) {
+        this.concepto = concepto;
     }
 
-    public String getSubject() {
-        return subject;
+    public Date getFechaFactura() {
+        return fechaFactura;
     }
 
-    public void setSubject(String subject) {
-        this.subject = subject;
+    public void setFechaFactura(Date fechaFactura) {
+        this.fechaFactura = fechaFactura;
+    }
+
+    public String getImporteBruto() {
+        return importeBruto;
+    }
+
+    public void setImporteBruto(String importeBruto) {
+        this.importeBruto = importeBruto;
     }
 }
+
